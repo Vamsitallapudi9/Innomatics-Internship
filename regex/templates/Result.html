@@ -1,0 +1,29 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Result</title>
+  </head>
+  <center>
+    <br><br><br><br><br><br><br><br><br>
+<body bgcolor="FFFFFF">
+    <h1>Welcome to the Regex Party!</h1>
+    <p><strong>Regex Rave:</strong> {{ pattern }}</p>
+    <p><strong>The Target is ready to groove:</strong></p>
+    <pre>{{ text }}</pre>
+    <p><strong>Get Ready to Dance with these Matches:</strong></p>
+    <ul>
+      {% for match in matches %}
+      <li>{{ match }} is hit !</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
