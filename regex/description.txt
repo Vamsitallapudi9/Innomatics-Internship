@@ -1,0 +1,5 @@
+This project is a clone of regex101.com built using Flask, a Python web framework. 
+The goal of the project is to provide a web-based regular expression tester that allows users to test their regular expressions and see the results in real-time.
+The application should allow users to enter a regular expression and a test string, and then display the results of the match or highlight the parts of the string that match the regular expression. 
+The project should also include features such as the ability to save and load regular expressions, share regular expressions via URL, and provide syntax highlighting for regular expressions. 
+By completing this project, you will gain experience building web applications using Flask, as well as gain a better understanding of regular expressions and how they work.
