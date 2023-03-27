@@ -1,0 +1,23 @@
+{% extends 'Base.html' %}
+
+{% block title %}URL Shortener{% endblock %}
+
+{% block content %}
+	<form method="post">
+		<label for="url" style="color: #555; font-weight: bold;">Enter your URL:</label>
+		<input type="text" name="url" id="url" placeholder="https://Demosite.com" required>
+		<input type="submit" value="Shorten">
+        
+	</form>
+
+    
+	{% if error == "not valid" %}
+		<p class="error">Please enter a valid URL</p>
+	{% endif %}
+	{% if finalurl %}
+		<p>Shortened URL is:</p>
+        <p class="short-url"><a href="{{ url_for('redirection', finalurl=finalurl) }}">{{ url_for('redirection', finalurl=finalurl, _external=True) }}</a></p>
+    {% endif %}
+
+
+{% endblock %}

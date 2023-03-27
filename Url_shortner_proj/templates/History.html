@@ -1,0 +1,35 @@
+{% extends 'Base.html' %}
+
+{% block title %}URL Shortener History{% endblock %}
+
+{% block content %}
+	<h2 style="text-align: center;"> History of URL Shortener </h2>
+	{% if saved %}
+		<table>
+			<thead>
+				<tr>
+			
+					<col style="width:50%">
+					<th >Long URL</th>
+					<th>Short URL</th>
+					<th>Fun( )</th>
+				
+				</tr>
+			</thead>
+			<tbody>
+				{% for i in saved %}
+					<tr>
+						<td><a href="{{ i.long_url }}">{{ i.long_url }}</a></td>
+						<td><a href="{{ url_for('redirection', finalurl=i.short_url) }}">{{ url_for('redirection', finalurl=i.short_url, _external=True) }}</a></td>
+						<td><a href="{{ url_for('delete', id=i.id) }}" class="delete-link">Delete</a></td>
+
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	{% else %}
+		<br> <br> <br>
+		<p style="text-align: center;color: brown;"><b>URLs are yet to be shortened.</p>
+	{% endif %}
+
+{% endblock %}
