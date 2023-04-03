@@ -1,0 +1,6 @@
+#Problem Statement 🍕
+
+##Store owner has started his own Pizza Store by getting the Franchise from the popular Pizza brand Diminos. 
+##Diminos promises to deliver the pizza order within 31 minutes from the time the order was placed. Otherwise the pizza will be free for the customer.
+##In order to increase the revenue and profits Store owner is running the store 24 * 7.
+##Recently Diminos gave a notice to Store owner that they will be measuring their stores' performance by looking at the metric - which is 95th Percentile on Order Delivery time should be less than 31 mins.
